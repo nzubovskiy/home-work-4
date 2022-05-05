@@ -32,6 +32,36 @@ public class Main {
             }
         }
 
+        // Задание №4
+        for (int number = 1; number <= 30 ; number++) {
+            if (number % 3 == 0 && number % 5 == 0) {
+                System.out.println(number + ": ping pong");
+                continue;
+            } else if (number % 3 == 0) {
+                System.out.println(number + ": ping");
+                continue;
+            } else if (number % 5 == 0) {
+                System.out.println(number + ": pong");
+                continue;
+            } else {
+                System.out.println(number + ": ");
+            }
+        }
+
+        // Задание №5
+        int a = 0;
+        int b = 1;
+        System.out.print(a + " " + b + " ");
+        for (int j = 0; j < 8; j++) {
+            int fibo = a + b;
+            a = b;
+            b = fibo;
+            System.out.print(fibo + " ");
+        }
+
+
+
+
     }
 }
 
